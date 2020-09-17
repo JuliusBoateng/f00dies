@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Dev Plan</title>
+        <style>
+            body {background-color :teal;}
+            p {
+                font-size: 110%;
+                font-family: Verdana;  
+            }
+            hr {
+                border-color: black;
+            }
+            div.main {
+                width: 1250px;
+            }
+            ul {
+                font-size: 110%;
+                font-family: Verdana;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+        <h1>Development Plan</h1>
+        <h2>Relational Schema</h2>
+        <p>
+						R1 = Recipe(name, dish_simple_name, link, calories, al1, al2, al3, al4, al5, al6, al7, al8)<br>
+        		R2 = Dishes(simple_name, category) <br>
+        		R3 = Menu_Items(name, rest_name, rest_location, dish_simple_name, category, price, calories, rating, al1, al2, al3, al4, al5, al6, al7, al8)<br>
+		    		R4 = Restaurants(name, location, hours) <br><br>
+          	S1  = {name -> dish_simple_name, link, calories, al1, al2, al3, al4, al5, al6, al7, al8} <br>
+          	S2 = {simple_name -> category} <br>
+          	S3 = {name, rest_name, rest_location -> dish_simple_name, category, price, calories, rating, al1, al2, al3, al4, al5, al6, al7, al8} <br>
+          	S4 = {name, location -> hours}
+				</p> 
+          	<hr>
+        <h2>Software Tools</h2>
+            <p>
+                Angular, HTML, CSS, Javascript, Java, C++, Python, MySQL <br> <br>
+
+                HTML/CSS/Javascript/Angular will be used on the front-end, while one/some of the other listed language(s) will be used for the back-end/middle-ware logic (e.g. advanced functions).    
+                Of course, we will be using MySQL for our database.
+
+            </p>
+            <hr>
+            <h2>Data</h2>
+            <p>
+                The restaurant data will come from either the http://nutrition.nd.edu/1 website or from a spreadsheet or raw file from dining@nd.edu. 
+                Spoonacular API will be used to fill the recipe database. The data for our restaurant results ordering algorithm will come from ND students from our various classes. 
+            </p>
+            <hr>
+            <h2>Division of Labour</h2>
+            <p>
+                Brendan will focus on the front-end/user interface. Luke will spearhead the database-related tools, which includes on-paper abstractions (e.g. relational schema, entity sets, etc) as well as the SQL implementation. 
+                Blaise and Julius will implement the middle-ware and backend logic for the website, which includes finding and utilizing an appropriate API for recipes, implementing the rating system, and other advanced functionalities. 
+                Of course, these boundaries aren’t static, and will certainly change as the project comes together.
+            </p>
+            <hr>
+            <h2>Project Timeline</h2>
+            <p>
+                <ul>
+                    <li>Now - Fall Break: get data and load into database</li>
+                    <li>Fall Break - Nov. 5: complete the basic functions</li>
+                    <li>Nov. 5: demo project with data and basic functions</li>
+                    <li>Nov. 5 - Thanksgiving break: complete one advanced function </li>
+                    <li>Thanksgiving Break - Dec. 1: complete both advanced functions (should be close to done here)</li>
+                    <li>Dec. 1 - Dec. 11: troubleshoot, make YouTube video</li>
+                    <li>Dec. 11 - working final project with advanced functions and demo video</li>
+                </ul>
+            </p>
+            </div>
+            
+    </body>
+</html>

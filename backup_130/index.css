@@ -1,0 +1,136 @@
+/* color scheme */
+:root {
+
+	--c1: #2660A4; /* rgb(236,97,137)*/
+	--c2: #EDF7F6; /* rgb(57,62,65) */ 
+	--c3: #F19953; /* 255 213 115 */
+	--c4: #C47335; /* rgb(52,191,174) */
+	--c5: #56351E; /* rgb(27,73,101) */
+
+	--c6: #ddd;
+	/* var(--c3) */
+
+}
+
+.noselect, .tab {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Courier", Times, serif;
+	font-size: 20px;
+	text-align: center;
+	background-color: var(--c6)
+}
+
+.title1 {
+	position: fixed;
+	width: 100%;
+	height: 70px;
+	background-color: var(--c1);
+	color: var(--c2);
+	padding-top: 13px;
+	font-size: 50px;
+	z-index: 2;
+}
+
+.title2 {
+	position: fixed;
+	font-family: "Georgia", Times, serif;
+	width: 100%;
+	height: 50px;
+	margin-top: 70px;
+	background-color: var(--c1);
+	color: var(--c2);
+	padding-top: 13px;
+	z-index: 2;
+}
+
+.account_name {
+	z-index: 3;
+	position: fixed;
+	right: 10px;
+	color: #ddd;
+}
+
+.items-container {
+	display: inline-block;
+	position: absolute;
+	/*background-color: red;*/
+	margin-top: 250px;
+	transform: translateX(-50%);
+}
+
+a {	
+	padding: 5px;
+	border-radius: 5px;
+	background-color: var(--c2);
+	box-shadow: 2px 2px;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+
+form {
+}
+
+
+.navbar {
+	position: absolute;
+	background-color: red;
+	top: 50px;
+	height: 80px;
+	width: 100%;
+	display: flex;
+	z-index: 3;
+}
+
+.tab {
+	flex: 1;
+	display: table;
+	transition: 0.2s;
+	text-align: center;
+	height: 100%;
+	background-color: #eee;
+	filter: saturate(80%);
+	color: var(--c6);
+	border-color: grey;
+	border-style: solid;
+	padding: 0 10px 0 10px;
+	border-width: 0px 0px 0px 2px;
+}
+
+#tab1 {
+	border-width: 0px;
+}
+
+.active {
+	/*filter: saturate(100%);*/
+	background-color: var(--c3);
+	color: black;
+}
+
+.tab:hover {
+	cursor: pointer;
+	background-color: var(--c4);
+}
+
+.tab:active {
+	/*transform: translateY(1px);*/
+	filter: saturate(100%);
+}
+
+th {
+	/*font-size: 5px;*/
+}
+
+
